@@ -44,10 +44,7 @@ def _start(client, message):
             [
                InlineKeyboardButton("📲 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"),
                InlineKeyboardButton("💬 Support", url=f"https://t.me/{SUPPORT_GROUP}")
-            ],
-            [
-               InlineKeyboardButton("🛠 Source Code 🛠", url=f"https://{SOURCE_CODE}")
-           ]]
+            ]]
         ),
         reply_to_message_id=message.message_id,
     )
@@ -103,9 +100,6 @@ def map(pos):
                   [
                     InlineKeyboardButton(text="📲 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"),
                     InlineKeyboardButton(text="💬 Support", url=f"https://t.me/{SUPPORT_GROUP}")
-                  ],
-                  [
-                    InlineKeyboardButton(text="🛠 Source Code 🛠", url=f"https://{SOURCE_CODE}")
                   ],
                   [
                     InlineKeyboardButton(text="◀️", callback_data=f"help+{pos-1}")
